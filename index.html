@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アンケートへ移動中...</title>
+  <script>
+    // --------------------------------------------------
+    // 1. Google フォームの公開URLを設定（2つ）
+    // --------------------------------------------------
+    const urls = [
+      "https://forms.gle/TozSH4tkhKbMMtrg6",
+      "https://forms.gle/7zKWqoxexM8oK87B7"
+    ];
+
+
+    // --------------------------------------------------
+    // 2. 均等確率（1/2 = 50%）でランダム選出 ＆ リダイレクト
+    // --------------------------------------------------
+    const targetUrl = urls[Math.floor(Math.random() * urls.length)];
+    window.location.replace(targetUrl);
+  </script>
+</head>
+<body>
+  <p>アンケートページへ移動しています。そのまま少々お待ちください...</p>
+</body>
+</html>
